@@ -9,7 +9,7 @@ import Burger from '/Burger.svg'
 const Header = () => {
   return (
     <>
-      <section id="header" className='max-w-[1120px] mx-auto h-[88px] flex justify-between items-center'>
+      <section id="header" className='max-w-[1120px] mx-auto h-[88px] flex justify-between items-center gap-12 2xl:gap-14 px-4 sm:px-8 md:px-12 lg:px-16 xl:px-32 2xl:px-64'>
         {/* Logo */}
         <div className="logo w-[65px]">
           <Link to='/'> <img src={Logo} alt="Logo" className='w-full' /></Link>
@@ -21,10 +21,10 @@ const Header = () => {
         </div>
         {/* Menu  */}
         <div className="menu hidden lg:block">
-          <ul className='flex gap-x-12'>
+          <ul className='flex gap-x-10'>
             <li> <NavLink style={({ isActive }) => ({ fontWeight: isActive ? "bold" : "normal" })} to='/'>Home</NavLink> </li>
             <li> <NavLink style={({ isActive }) => ({ fontWeight: isActive ? "bold" : "normal" })} to='about'>About</NavLink> </li>
-            <li> <NavLink style={({ isActive }) => ({ fontWeight: isActive ? "bold" : "normal" })} to='contact'>Contact Us</NavLink> </li>
+            <li> <NavLink style={({ isActive }) => ({ fontWeight: isActive ? "bold" : "normal" })} to='contact'>Contact </NavLink> </li>
             <li> <NavLink style={({ isActive }) => ({ fontWeight: isActive ? "bold" : "normal" })} to='blog'>Blog</NavLink> </li>
           </ul>
         </div>
