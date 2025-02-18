@@ -9,7 +9,7 @@ import Burger from '/Burger.svg'
 const Header = () => {
   return (
     <>
-      <section id="header" className='max-w-[1120px] mx-auto h-[88px] flex justify-between items-center gap-12 2xl:gap-14 px-4 sm:px-8 md:px-12 lg:px-16 xl:px-32 2xl:px-64'>
+      <header id="header" className='max-w-[1120px] mx-auto h-[88px] flex justify-between items-center gap-12 2xl:gap-14 px-4 sm:px-8 md:px-12 lg:px-16 xl:px-32'>
         {/* Logo */}
         <div className="logo w-[65px]">
           <Link to='/'> <img src={Logo} alt="Logo" className='w-full' /></Link>
@@ -36,9 +36,9 @@ const Header = () => {
         </div>
         {/* Mobile Menu  */}
         <div className="w-10 lg:hidden">
-          <img src={Burger} alt="" className='w-full cursor-pointer'/>
+          <img src={Burger} alt="" className='w-full cursor-pointer' />
         </div>
-      </section>
+      </header>
     </>
   )
 }
